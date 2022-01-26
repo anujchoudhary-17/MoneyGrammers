@@ -15,9 +15,9 @@ Feature: Exercise Selection
         And Fields should be emptied and cleared
 
     Scenario: User selects the dumbbell exercise
-        Given User is in the exercise training
-        And User has selected the dumbbell option
-        When User enters the the weight of the dumbbell
+        Given User is in the exercise training page
+        When User selects the dumbbell option 
+        And User enters the weight of the dumbbell
         And User enters the numbers of sets after he performs the movement
         And User enters the numbers of reps after he performs the movement
         And User presses the save button
