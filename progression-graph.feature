@@ -8,21 +8,18 @@ Feature: Feature Progression graph
         Then  User started with <-> pounds
 
 
-    Scenario: Week 1 Bicep Weight Track
-    Given : User has added the feature
-    And : Feature is ready to use
-    When : He performs the exercise daily
-    And : Adds the weight of dumbbells'/equipment used for biceps daily
-    And : The week ends
-    Then : The feature gives output as a graph of Time <-> Weight used by the User
-
-Feature: Tracks user's weekly weight gain and displays it in a graph
-
-    Scenario: Week 1 Complete
-        Given : User has added the feature
-        And : Feature is ready to use
+    Scenario: Week 1 Bicep Equipments Weight Track
+        Given : User has added the new weight track
         When : He performs the exercise daily
-        And : Adds his weight daily
+        And : Records the weight of dumbbells'/equipment  used for biceps daily
         And : The week ends
-        Then : The feature gives output as a graph of Time <-> Weight
+        Then : The graph gives output of Time <-> Weight used by the User
+
+Feature: Tracks user's weekly bodyweight gain and displays it in a graph
+    Scenario: Week 1 Complete
+        Given : User inputs bodyweight
+        When : He performs the exercise daily
+        And : Records his bodyweight daily
+        And : The week ends
+        Then : The graph gives output of Time <-> BodyWeight
 
