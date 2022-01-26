@@ -8,11 +8,11 @@ Feature: Exercise Selection
         Given User is in the exercise training page
         When User enters the numbers of sets after he performs the movement
         And User enters the numbers of reps after he performs the movement
-        And User selects Squat as an exercise
+        And User selects Squat as an exercise movement
         And User presses the save button
         Then The exercise training page should refresh
         And User should able to see the information that was saved
-        And Textboxes should be emptied and cleared
+        And Fields should be emptied and cleared
 
     Scenario: User selects the dumbbell exercise
         Given User is in the exercise training
@@ -23,4 +23,4 @@ Feature: Exercise Selection
         And User presses the save button
         Then The exercise training page should refresh
         And User should able to see the information that was saved
-        And Textboxes should be emptied and cleared
+        And Fields should be emptied and cleared
